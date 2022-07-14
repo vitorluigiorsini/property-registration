@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Cadastro de Imóveis</title>
+</head>
+
+<body>
+  <section class="section">
+    <header class="header">
+      <h1>CADASTRO DE IMÓVEIS</h1>
+    </header>
+
+    <div class="container">
+      <div class="card">
+        <form class="form">
+          <div class="formInput">
+            <label>Tipo</label>
+            <select class="inputBox" name="type" id="type">
+              <option value="Casa">Casa</option>
+              <option value="Apartamento">Apartamento</option>
+            </select>
+          </div>
+          <div class="formInput">
+            <label>Área do imóvel:</label>
+            <input class="inputBox" type="number" min="0" name="area" placeholder="m²">
+          </div>
+          <div class="formInput">
+            <label>Encontra-se alugado?</label>
+            <div class="options">
+              <input type="radio" name="isLocated" value="Sim">Sim
+              <input type="radio" name="isLocated" value="Não">Não
+            </div>
+          </div>
+          <input class="button" type="button" value="Adicionar" onclick="app.addProperty()">
+        </form>
+
+        <h4 class="listTitle">Imóveis cadastrados:</h4>
+        <ul id="registeredProperties" class="registeredProperties">
+        </ul>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <h4>© COPYRIGHT 2022 - Todos os direitos reservados.</h4>
+    </footer>
+  </section>
+  <script src="./js/app.js"></script>
+  <script src="./js/properties.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
