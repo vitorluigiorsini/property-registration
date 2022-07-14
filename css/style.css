@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  width: 100%;
+  padding: 20px;
+  background-color: #393939;
+  text-align: center;
+  color: gainsboro;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1 0 auto;
+  gap: 15px;
+  padding: 20px;
+  background-image: url('../img/bg-house.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+}
+
+.card {
+  background-color: #3939399f;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.inputBox {
+  min-height: 30px;
+  min-width: 250px;
+  border-radius: 5px;
+  background-color: gainsboro;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button {
+  width: fit-content;
+  align-self: center;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  background-color: mediumseagreen;
+  color: gainsboro;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  padding: 2px 4px;
+}
+
+.listTitle {
+  text-align: center;
+}
+
+.registeredProperties {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 10px;
+  padding: 15px;
+}
+
+.footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #393939;
+  text-align: center;
+  color: gainsboro;
+}
